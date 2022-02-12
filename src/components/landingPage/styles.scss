@@ -1,0 +1,349 @@
+//Font
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+
+//Variables
+$mobile-breakpoint: 350px;
+$large-mobile-breakpoint: 530px;
+$tablet-breakpoint: 700px;
+$desktop-breakpoint: 1200px;
+
+//Mixins
+//Centering Mixins
+@mixin horizontal-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin vertical-center {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+//Media Query mixins
+@mixin mobile {
+  @media (min-width: #{$mobile-breakpoint}) and (max-width: #{$large-mobile-breakpoint - 1}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$large-mobile-breakpoint}) and (max-width: #{$tablet-breakpoint - 1}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$tablet-breakpoint}) and (max-width: #{$desktop-breakpoint}) {
+    @content;
+  }
+}
+
+//Body
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  height: 700px;
+  background-color: #f0ebe5;
+  font-size: 14px;
+  font-family: "Montserrat", sans;
+  .container-inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    position: relative;
+
+    .main-content {
+      flex-basis: 50%;
+      order: 1;
+      align-self: center;
+      display: flex;
+      flex-direction: column;
+      .main-headings {
+        width: 100%;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+
+        .heading {
+          // align-self: flex-end;
+          margin-top: 20px;
+          margin-left: 80px;
+          #heading1,
+          #heading2 {
+            margin: 0;
+            margin-top: -20px;
+          }
+          #heading1 {
+            font-size: 500%;
+            font-weight: lighter;
+            letter-spacing: -1px;
+            color: #8c653c;
+          }
+          #heading1 {
+            margin-left: 50px;
+          }
+          #heading2 {
+            margin-top: -40px;
+            font-size: 900%;
+            font-weight: 800;
+            letter-spacing: 2px;
+            color: #37241a;
+          }
+        }
+        .short-bio {
+          width: 60%;
+          margin-top: -30px;
+          margin-left: 90px;
+          font-style: italic;
+          font-size: 105%;
+        }
+        a {
+          // width: 72%;
+          margin-left: 92px;
+          // margin-right: auto;
+          align-self: flex-start;
+          font-weight: bold;
+          font-size: 120%;
+          font-family: helvetica;
+          text-decoration: none;
+          color: #37241a;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+      .more-info {
+        margin-top: -70px;
+        width: 50%;
+        height: 0;
+        margin-left: auto;
+        margin-right: auto;
+        align-self: flex-start;
+        overflow: hidden;
+      }
+    }
+    .image-wrapper {
+      flex-basis: 50%;
+      order: 2;
+      .image-container {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          width: auto;
+          height: 100%;
+          position: relative;
+        }
+        &:hover {
+          content: url("https://www.therow.com/cloud/therowwp/uploads/2022/01/Look_9_The_Row_FW22_WRTW-scaled.jpg?imdensity=1&imwidth=654&impolicy=therow");
+          width: auto;
+        }
+      }
+    }
+  }
+}
+
+//Media Query for mobile devices
+@include mobile {
+  * {
+    animation-name: none;
+  }
+  .container {
+    width: 90%;
+    height: 700px;
+    @include horizontal-center;
+    font-size: 5px;
+    margin-bottom: 20px;
+  }
+  .container-inner {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .main-content,
+  .image-wrapper {
+    flex-basis: 100%;
+  }
+  .main-content {
+    order: 2;
+    outline: 1px solid red;
+    margin: 0 50px;
+  }
+  .image-wrapper {
+    order: 1;
+  }
+  .heading {
+    margin-left: 55px;
+  }
+  #heading1 {
+    margin: 0;
+    margin-top: -5px;
+  }
+
+  #heading2 {
+    margin-top: -20px;
+  }
+  .short-bio {
+    margin-top: -10px;
+    margin-left: 60px;
+  }
+  .more-info {
+    height: 150px;
+    width: 60%;
+    margin: 0;
+    align-self: flex-start;
+    margin-top: 0px;
+    margin-left: 60px;
+    //text-align: justify;
+    font-size: 8px;
+  }
+  .link {
+    display: none;
+  }
+  .image-wrapper {
+    order: 1;
+    width: 100%;
+    height: 100px;
+    justify-content: center;
+  }
+  .image-container {
+    width: 100%;
+    height: 400px;
+    @include horizontal-center;
+    @include vertical-center;
+  }
+  img {
+    width: 100%;
+    height: auto;
+    top: -20px;
+    @include horizontal-center;
+  }
+}
+
+//Media Query for tablet devices
+
+@include tablet {
+  * {
+    animation-name: none;
+  }
+  .container {
+    width: 90%;
+    height: 900px;
+    @include horizontal-center;
+    font-size: 8px;
+  }
+  .container-inner {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .main-content,
+  .image-wrapper {
+    flex-basis: 100%;
+  }
+  .main-content {
+    width: 80%;
+    order: 2;
+    align-self: center;
+  }
+  .main-headings {
+    width: 100%;
+    margin-top: 20px;
+    @include horizontal-center;
+  }
+  .heading {
+    margin-left: 55px;
+  }
+  #heading1 {
+    margin: 0;
+    margin-top: -15px;
+  }
+  #heading2 {
+    margin-top: -30px;
+  }
+  .short-bio {
+    margin-top: -20px;
+    margin-left: 60px;
+  }
+  .link {
+    display: none;
+  }
+  .more-info {
+    height: 150px;
+    width: 60%;
+    margin: 0;
+    align-self: flex-start;
+    margin-top: 0px;
+    margin-left: 60px;
+    text-align: justify;
+  }
+  .image-wrapper {
+    order: 1;
+    width: 100%;
+    height: 400px;
+    justify-content: center;
+  }
+  .image-container {
+    width: 100%;
+    height: 400px;
+    @include horizontal-center;
+  }
+  img {
+    width: 100%;
+    height: auto;
+    top: -20px;
+    @include horizontal-center;
+  }
+}
+
+/*
+
+@include tablet {
+  .container {
+    width: 100%;
+    height: auto;
+    font-size: 7px;
+  }
+  #heading2 {
+    margin-top: -35px ;
+  }
+  .link {
+    margin-left: 30px;
+  }
+  .more-info {
+    margin-top: -40px ;
+  }
+}
+*/
+//Media query for desktop devices
+
+@include desktop {
+  .container {
+    width: 100%;
+    height: auto;
+    font-size: 9px;
+  }
+  #heading2 {
+    margin-top: -35px;
+  }
+  .link {
+    margin-left: 30px;
+  }
+  .more-info {
+    margin-top: -40px;
+  }
+}

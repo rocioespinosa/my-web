@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap");
+
+.topNav {
+  background-color: white;
+  color: black;
+}
+
+.topNav a {
+  color: black;
+  text-align: justify;
+  font-size: 20px;
+  text-decoration: none;
+  font-family: "Cormorant Garamond", serif;
+}
+.active {
+  color: black;
+}
+
+.active:hover {
+  text-decoration: underline;
+}

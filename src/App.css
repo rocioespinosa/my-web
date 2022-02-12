@@ -1,38 +1,24 @@
-.App {
-  text-align: center;
-}
+.app-container {
+  display: grid;
+  grid-template-rows: 10% 80% 10%;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+  grid-template-areas: "TopNavBar" "LandingPage";
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+  width: 100%;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.app-topNavBar {
+  grid-area: TopNavBar;
+ float: right;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app-LPage {
+  grid-area: LandingPage;
+
+  align-items: center;
+  justify-items: center;
 }
