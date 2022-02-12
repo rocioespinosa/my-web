@@ -1,7 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap");
 
 .topNav {
-  background-color: white;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  top: 0;
   color: black;
 }
 

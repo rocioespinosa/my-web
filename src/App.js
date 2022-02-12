@@ -1,6 +1,9 @@
 import "./App.css";
 import LandingPage from "./components/landingPage";
+import MenPage from "./components/menPage";
 import TopNavBar from "./components/navBar";
+import WomenPage from "./components/womenPage";
+import InspirationPage from "./inspirationPage";
 
 function App() {
   return (
@@ -11,9 +14,10 @@ function App() {
       </div>
       <div className="app-LPage">
         {" "}
-        <div>
-          <LandingPage />
-        </div>
+        <LandingPage />
+        <MenPage />
+        <WomenPage />
+        <InspirationPage />
       </div>
     </div>
   );
