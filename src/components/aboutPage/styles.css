@@ -1,0 +1,17 @@
+.about-container {
+  display: grid;
+  grid-template-columns: 100px 100px;
+  grid-template-rows: 50px 50px;
+}
+
+.image-container {
+  display: grid;
+  justify-content: center;
+}
+
+.description {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  width: 30%;
+}

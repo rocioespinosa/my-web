@@ -1,6 +1,6 @@
 import "./App.css";
 import LandingPage from "./components/landingPage";
-import MenPage from "./components/menPage";
+import AboutPage from "./components/aboutPage";
 import TopNavBar from "./components/navBar";
 import WomenPage from "./components/womenPage";
 import InspirationPage from "./inspirationPage";
@@ -15,7 +15,7 @@ function App() {
       <div className="app-LPage">
         {" "}
         <LandingPage />
-        <MenPage />
+        <AboutPage />
         <WomenPage />
         <InspirationPage />
       </div>
