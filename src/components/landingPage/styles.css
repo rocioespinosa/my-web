@@ -1,52 +1,71 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Noto+Serif+TC:200,400,700|Roboto:100,400,700");
 
-.landing-container {
-  background-color: #f0ebe5;
-  display: flex;
-  flex-direction: column;
+div {
+  box-sizing: border-box;
 }
 
-.outfit-image {
+.home-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: antiquewhite;
+  border-top: 30px solid white;
+  border-left: 50px solid white;
 }
 
-.main-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.short-bio {
-  width: 40%;
-  font-style: italic;
-  font-size: 105%;
-  display: flex;
-  margin: auto;
-}
-.heading {
-  flex-basis: 50%;
-  order: 1;
+.left-h-container {
+  flex: 1 1 0;
   align-self: center;
+  margin-left: 30px;
+}
+
+.right-h-container {
+  background-image: url("https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8OXx8fGVufDB8fHx8&w=1000&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  flex: 1 1 0;
   display: flex;
   flex-direction: column;
-  font-family: "Montserrat", sans;
+  border-bottom: 50px solid white;
+  border-left: 50px solid white;
+}
+
+.half-h-containers {
+  flex: 1;
+  overflow: auto;
 }
 
 h1 {
-  font-size: 50px;
-  font-weight: lighter;
-  letter-spacing: -1px;
-  color: #8c653c;
-  margin: 50px;
+  color: #876445;
+  font-family: "Noto Serif TC", serif;
+  font-size: 6rem; /* 96px */
+  line-height: 1;
+  letter-spacing: 3px;
+  font-weight: 800;
+  text-align: right;
+  margin: auto;
+  padding-right: 5%;
+  text-shadow: 2px 2px 2px #603601;
+}
+
+.line {
+  width: 5rem; /* 80px */
+  height: 0.5rem; /* 8px */
+  background-color: #cc9544;
+  margin-top: 1rem; /* 16px */
+  margin-bottom: 1rem; /* 16px */
+  margin: 0px;
 }
 
 h2 {
-  margin: auto;
-  font-size: 900%;
-  font-weight: 800;
-  letter-spacing: 2px;
-  color: #37241a;
-  margin-left: 50px;
+  font-family: "Lora", serif;
+  line-height: 1.5;
+  font-weight: 100;
+  text-align: right;
+  padding-right: 5%;
 }

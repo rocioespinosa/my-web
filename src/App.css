@@ -12,8 +12,8 @@
 
 .app-topNavBar {
   grid-area: TopNavBar;
- float: right;
-  
+  align-items: center;
+  justify-items: center;
 }
 
 .app-LPage {

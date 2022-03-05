@@ -3,7 +3,7 @@ import LandingPage from "./components/landingPage";
 import AboutPage from "./components/aboutPage";
 import TopNavBar from "./components/navBar";
 import WomenPage from "./components/womenPage";
-import InspirationPage from "./inspirationPage";
+import InspirationPage from "./components/inspirationPage";
 
 function App() {
   return (

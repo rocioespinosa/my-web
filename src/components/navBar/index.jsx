@@ -4,17 +4,17 @@ import "./styles.css";
 export default function index() {
   const handleClick = (scrollToId) => {
     document.getElementById(scrollToId).scrollIntoView({
-      behavior: "smooth", 
+      behavior: "smooth",
     });
   };
 
   return (
     <div className="topNav">
-      <span onClick={() => handleClick("landing")}>Home</span>
+      <span onClick={() => handleClick("landing")}>Home</span> &nbsp;
+      <span onClick={() => handleClick("AboutPage")}> About </span> &nbsp;
+      <span onClick={() => handleClick("Women")}>Women</span>&nbsp;
+      <span onClick={() => handleClick("Inspiration")}>Inspiration</span>
       &nbsp;
-      <span onClick={() => handleClick("about")}>About</span> &nbsp;
-      <span onClick={() => handleClick("women")}>Women</span>&nbsp;
-      <span onClick={() => handleClick("inspiration")}>Inspiration</span>
     </div>
   );
 }

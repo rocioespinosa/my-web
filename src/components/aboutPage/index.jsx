@@ -1,32 +1,20 @@
 import React from "react";
 import "./styles.css";
 
-export default function AboutPage() {
+export default function index() {
   return (
-    <div>
-      <div className="about-container" id="about">
-        About Page
-      </div>
-
-      <div class="image-container">
+    <div className="about-container">
+      <div className="item1">
+        <div className="mexico">MEXICO</div>
         <img
-          className="image"
-          src="https://cdn1.savoirflair.com/pictures/w/450/1/95/ffffff/wp-content/uploads/2020/06/Mary-Kate-Ashley-Olsen-The-ROW-NAP.jpg?x88026"
-          alt="olsenTwins"
+          className="cafe1"
+          src="https://dam.cocinafacil.com.mx/wp-content/uploads/2019/08/cafe-de-olla.jpg"
+          alt="cafe1"
         ></img>
-        {/*Photo: Courtesy of Net-a-Porter*/}
       </div>
-      <div className="description">
-        {" "}
-        <span>
-          {" "}
-          The Row was established in 2006 by Ashley Olsen and Mary-Kate Olsen.
-          The idea for the brand started as a personal project in 2005 when
-          Ashley Olsen challenged herself to create a perfect T-shirt. She
-          tested the design on a variety of women of all body shapes and ages in
-          an attempt to find a "commonality in fit and attitude".
-        </span>
-      </div>
+      <div className="item2">Item 2</div>
+      <div className="item3">Item 3</div>
+      <div className="item4">Item 4</div>
     </div>
   );
 }

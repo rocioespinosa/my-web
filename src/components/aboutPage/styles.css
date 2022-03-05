@@ -1,17 +1,30 @@
 .about-container {
-  display: grid;
-  grid-template-columns: 100px 100px;
-  grid-template-rows: 50px 50px;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  min-width: 100vw;
 }
 
-.image-container {
-  display: grid;
-  justify-content: center;
+.item1,
+.item2,
+.item3,
+.item4 {
+  display: flex;
+  min-width: 50%;
+  min-height: 50%;
 }
 
-.description {
-  display: grid;
-  justify-content: center;
-  text-align: center;
-  width: 30%;
+.mexico {
+  font-size: 14px;
+  letter-spacing: 3px;
+  display: flex;
+  align-content: flex-start;
+  padding-left: 20px;
+}
+
+.cafe1 {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
 }
