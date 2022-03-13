@@ -10,15 +10,22 @@
 .item3,
 .item4 {
   display: flex;
-  min-width: 50%;
-  min-height: 50%;
+  width: 50%;
+  height: 50%;
+  flex-direction: column;
+  align-items: center;
 }
 
 .mexico {
   font-size: 25px;
   letter-spacing: 3px;
+}
+
+.mexico-image {
+  width: 50%;
+}
+
+.image-text-container {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  margin: 0%;
 }
