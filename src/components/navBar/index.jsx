@@ -10,10 +10,22 @@ export default function index() {
 
   return (
     <div className="topNav">
-      <span onClick={() => handleClick("landing")}>Home</span> &nbsp;
-      <span onClick={() => handleClick("AboutPage")}> About </span> &nbsp;
-      <span onClick={() => handleClick("Women")}>Women</span>&nbsp;
-      <span onClick={() => handleClick("Inspiration")}>Inspiration</span>
+      <span className="navstyle" onClick={() => handleClick("landing")}>
+        Home
+      </span>{" "}
+      &nbsp;
+      <span className="navstyle" onClick={() => handleClick("AboutPage")}>
+        {" "}
+        About{" "}
+      </span>{" "}
+      &nbsp;
+      <span className="navstyle" onClick={() => handleClick("Women")}>
+        Women
+      </span>
+      &nbsp;
+      <span className="navstyle" onClick={() => handleClick("Inspiration")}>
+        Inspiration
+      </span>
       &nbsp;
     </div>
   );

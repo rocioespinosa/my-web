@@ -10,12 +10,18 @@ export default function index() {
         <div className="image-text-container">
           <img
             className="mexico-image"
-            src="https://www.littlecoffeeplace.com/wp-content/uploads/2020/07/Mexican-Coffee.jpg"
+            src="https://laroussecocina.mx/wp-content/uploads/2018/01/Cafe-de-olla-001-Larousse-Cocina.jpg"
             alt="beans"
           />
-          <span>texto provisorio</span>
+          <ul className="mexico-text-right">
+            <li>cinnamon stick</li>
+            <li> 1.5 cups water </li> <li>1.5 cups water </li>
+            <li>1.5 tbsp piloncillo</li> <li>1 tbsp coffee</li>
+          </ul>
         </div>
-        <span>texto provisorio</span>
+        <span className="mexico-text-below">
+          Mexico is one of the largest exporters of organic certified coffee
+        </span>
       </div>
       <div className="item2">Item 2</div>
       <div className="item3">Item 3</div>
