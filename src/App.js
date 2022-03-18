@@ -1,9 +1,10 @@
 import "./App.css";
 import LandingPage from "./components/landingPage";
-import AboutPage from "./components/aboutPage";
+import SouthAmerica from "./components/southAmerica";
 import TopNavBar from "./components/navBar";
-import WomenPage from "./components/womenPage";
-import InspirationPage from "./components/inspirationPage";
+import Europe from "./components/europe";
+import Africa from "./components/africa";
+import Asia from "./components/asia";
 
 function App() {
   return (
@@ -15,9 +16,10 @@ function App() {
       <div className="app-LPage">
         {" "}
         <LandingPage />
-        <AboutPage />
-        <WomenPage />
-        <InspirationPage />
+        <SouthAmerica />
+        <Europe />
+        <Africa />
+        <Asia />
       </div>
     </div>
   );

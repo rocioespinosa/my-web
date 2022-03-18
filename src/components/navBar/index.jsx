@@ -14,19 +14,22 @@ export default function index() {
         Home
       </span>{" "}
       &nbsp;
-      <span className="navstyle" onClick={() => handleClick("AboutPage")}>
+      <span className="navstyle" onClick={() => handleClick("SouthAmerica")}>
         {" "}
-        About{" "}
+        South America{" "}
       </span>{" "}
       &nbsp;
-      <span className="navstyle" onClick={() => handleClick("Women")}>
-        Women
+      <span className="navstyle" onClick={() => handleClick("Europe")}>
+        Europe
       </span>
       &nbsp;
-      <span className="navstyle" onClick={() => handleClick("Inspiration")}>
-        Inspiration
+      <span className="navstyle" onClick={() => handleClick("Africa")}>
+        Africa
       </span>
       &nbsp;
+      <span className="navstyle" onClick={() => handleClick("Asia")}>
+        Asia
+      </span>
     </div>
   );
 }
