@@ -50,12 +50,12 @@ export default function CardHolder() {
     <div className="cardHolder-container">
       <Card
         className="cardHolder-card"
-        title={cardsInfo.title}
-        flag={cardsInfo.flag}
-        name={cardsInfo.name}
-        image={cardsInfo.image}
-        ingredients={cardsInfo.ingredients}
-        description={cardsInfo.description}
+        title={cardsInfo[0].title}
+        flag={cardsInfo[0].flag}
+        name={cardsInfo[0].name}
+        image={cardsInfo[0].image}
+        ingredients={cardsInfo[0].ingredients}
+        description={cardsInfo[0].description}
       />
     </div>
   );

@@ -10,14 +10,24 @@ export default function Card({
   description,
 }) {
   return (
-    <div>
-      <div className="card">
-        <h1 class="title">{title}</h1>
-        <p class="flag">{flag}</p>
-        <p class="name">{name}</p>
-        <p class="image">{image}</p>
-        <p class="ingredients">{ingredients}</p>
-        <p class="description">{description}</p>
+    <div className="item1">
+      <div className="title-mex-flag-container">
+        <div className="title"> {title} </div>
+        <div>
+          <img className="flag" src={flag} alt="flag" />
+        </div>
+        <div className="name">{name}</div>
+      </div>
+      <div className="image-text-container1">
+        <img className="image" src={image} alt="beans" />
+        <ul className="ingredients">
+          <li>cinnamon stick</li>
+          <li> 1.5 cups water </li> <li>1.5 cups water </li>
+          <li>1.5 tbsp piloncillo</li> <li>1 tbsp coffee</li>
+        </ul>
+      </div>
+      <div className="belox-text-container-1">
+        <span className="description">{description}</span>
       </div>
     </div>
   );
