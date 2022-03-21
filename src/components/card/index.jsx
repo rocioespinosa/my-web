@@ -21,12 +21,8 @@ export default function Card({
       </div>
       <div className="image-text-container">
         <img className="image" src={image} alt="beans" />
-        <ul className="ingredients">
-          <li>cinnamon stick</li>
-          <li> 1.5 cups water </li> <li>1.5 cups water </li>
-          <li>1.5 tbsp piloncillo</li> <li>1 tbsp coffee</li>
-        </ul>
       </div>
+      <div className="ingredients">{ingredients}</div>
       <div className="belox-text-container">
         <span className="description">{description}</span>
       </div>
