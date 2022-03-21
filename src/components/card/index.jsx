@@ -8,17 +8,18 @@ export default function Card({
   image,
   ingredients,
   description,
+  color,
 }) {
   return (
-    <div className="item1">
-      <div className="title-mex-flag-container">
+    <div className="card" style={{ backgroundColor: color }}>
+      <div className="title-name-flag-container">
         <div className="title"> {title} </div>
         <div>
           <img className="flag" src={flag} alt="flag" />
         </div>
         <div className="name">{name}</div>
       </div>
-      <div className="image-text-container1">
+      <div className="image-text-container">
         <img className="image" src={image} alt="beans" />
         <ul className="ingredients">
           <li>cinnamon stick</li>
@@ -26,7 +27,7 @@ export default function Card({
           <li>1.5 tbsp piloncillo</li> <li>1 tbsp coffee</li>
         </ul>
       </div>
-      <div className="belox-text-container-1">
+      <div className="belox-text-container">
         <span className="description">{description}</span>
       </div>
     </div>

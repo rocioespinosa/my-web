@@ -1,0 +1,93 @@
+@import url("https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css");
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
+.card {
+  background-color: antiquewhite;
+  margin-left: 5%;
+  margin-top: 3%;
+  border-radius: 30px;
+  box-shadow: 0px 0px 10px 10px antiquewhite;
+  opacity: 0.8;
+  display: flex;
+  width: 40%;
+  height: 40%;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  border-radius: 30px;
+}
+
+.card:hover {
+  filter: opacity(10px);
+  transform: scale(1.05);
+  opacity: unset;
+  transition: 500ms all ease-in-out 0ms;
+}
+
+.title-name-flag-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.title {
+  font-family: "Rubik", sans-serif;
+  font-size: 50px;
+  letter-spacing: 3px;
+  font-weight: bold;
+  color: #876445;
+  align-items: flex-start;
+}
+
+.flag {
+  width: 30px;
+  margin-top: 2%;
+}
+
+.name {
+  font-family: "Rubik", sans-serif;
+  font-size: 30px;
+  letter-spacing: 3px;
+  font-weight: bold;
+  color: #876445;
+  margin-left: 1%;
+}
+
+.image {
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  margin-left: -5%;
+  margin-top: 4%;
+}
+
+.image-text-container {
+  display: flex;
+  flex-direction: row;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.ingredients {
+  font-family: "Rubik", sans-serif;
+  letter-spacing: 2px;
+  color: black;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.belox-text-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.description {
+  font-family: "Rubik", sans-serif;
+  letter-spacing: 0.5px;
+  color: peru;
+  margin-top: -20%;
+  font-size: 20px;
+}
