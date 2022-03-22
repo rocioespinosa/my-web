@@ -10,7 +10,7 @@ export default function CardHolder() {
       name: "CAFÉ DE OLLA",
       image:
         "https://laroussecocina.mx/wp-content/uploads/2018/01/Cafe-de-olla-001-Larousse-Cocina.jpg",
-      ingredients: "1 tsp espresso",
+      ingredients: ["1 tsp espresso"],
       description:
         "Mexico is one of the largest exporters of organic certified coffee",
       color: "antiquewhite",
@@ -21,7 +21,7 @@ export default function CardHolder() {
       name: "CAFÉ CUBANO",
       image:
         "https://recetacubana.com/wp-content/uploads/2019/08/cafe-cubano-1024x1024.jpg",
-      ingredients: "1 tsp espresso",
+      ingredients: ["1 tsp espresso"],
       description:
         " Drinking cortado is also common in other countries like Spain and Portugal.",
       color: "antiquewhite",
@@ -32,7 +32,7 @@ export default function CardHolder() {
       name: "CORTADO",
       image:
         "https://perfectdailygrind.com/es/wp-content/uploads/sites/2/2020/03/Cortadito-1.png",
-      ingredients: "1 tsp espresso",
+      ingredients: ["1 tsp espresso"],
       description:
         "  Eje Cafetero, also known as the Coffee Triangle, is Colombia's main coffee-growing region.",
       color: "antiquewhite",
@@ -43,7 +43,7 @@ export default function CardHolder() {
       name: "CAFEZINHO",
       image:
         "https://twigscafe.com/wp-content/uploads/2021/07/cup-of-black-coffee.jpg",
-      ingredients: "1 tsp espresso",
+      ingredients: ["1 tsp espresso"],
       description: "..",
       color: "antiquewhite",
     },
@@ -70,20 +70,9 @@ export default function CardHolder() {
     return new_arr;
   }
 
-  function createIngredients(arr) {
-    const ing_arr = [];
-
-    for (let i = 0; i < arr.length; i++) {
-      ing_arr.push(<li className="ingredients">.(...)</li>);
-    }
-    return ing_arr;
-  }
   return (
     <div>
-      {" "}
-      <li className="ingredients">{createIngredients(cardsInfo)}</li>{" "}
       <div className="cardHolder-container">{createCards(cardsInfo)}</div>
     </div>
   );
 }
-
