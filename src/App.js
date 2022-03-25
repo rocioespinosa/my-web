@@ -1,8 +1,9 @@
 import "./App.css";
 import LandingPage from "./components/landingPage";
-import SouthAmerica from "./components/southAmerica";
+import America from "./components/america";
 import TopNavBar from "./components/navBar";
 import Europe from "./components/europe";
+import Europe2 from "./components/europe2";
 import Africa from "./components/africa";
 import Asia from "./components/asia";
 
@@ -16,8 +17,9 @@ function App() {
       <div className="app-LPage">
         {" "}
         <LandingPage />
-        <SouthAmerica />
+        <America />
         <Europe />
+        <Europe2 />
         <Africa />
         <Asia />
       </div>

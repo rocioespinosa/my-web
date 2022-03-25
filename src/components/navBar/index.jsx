@@ -14,9 +14,9 @@ export default function index() {
         Home
       </span>{" "}
       &nbsp;
-      <span className="navstyle" onClick={() => handleClick("SouthAmerica")}>
+      <span className="navstyle" onClick={() => handleClick("America")}>
         {" "}
-        South America{" "}
+        America{" "}
       </span>{" "}
       &nbsp;
       <span className="navstyle" onClick={() => handleClick("Europe")}>

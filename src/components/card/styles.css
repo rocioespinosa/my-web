@@ -5,7 +5,6 @@
   margin-left: 5%;
   margin-top: 3%;
   border-radius: 30px;
-  box-shadow: 0px 0px 10px 10px antiquewhite;
   opacity: 0.8;
   display: flex;
   width: 40%;
@@ -14,6 +13,8 @@
   align-items: center;
   box-sizing: border-box;
   border-radius: 30px;
+  border: 0.1px solid transparent;
+  box-shadow: 0 5px 30px 0 #876445, inset 0px -10px 20px 0px antiquewhite;
 }
 
 .card:hover {
@@ -31,33 +32,39 @@
 
 .title {
   font-family: "Rubik", sans-serif;
-  font-size: 50px;
+  font-size: 40px;
   letter-spacing: 3px;
+  text-transform: uppercase;
   font-weight: bold;
   color: #876445;
-  margin-left: 20%;
+  margin-top: 0%;
+  margin-right: 10px;
 }
 
 .flag {
-  width: 30px;
-  margin-top: 2%;
+  width: 40px;
+  margin-top: 6%;
+  margin-left: 50px;
+  position: static;
 }
 
 .name {
   font-family: "Rubik", sans-serif;
-  font-size: 30px;
+  font-size: 34px;
   letter-spacing: 3px;
+  text-transform: uppercase;
   font-weight: bold;
   color: #876445;
-  margin-left: 1%;
+  margin-left: 80px;
 }
 
 .image {
-  width: 50%;
-  height: 50%;
-  border-radius: 50%;
-  margin-left: -5%;
+  width: 200px;
+  height: 200px;
+  border-radius: 25%;
+  margin-right: 350px;
   margin-top: 4%;
+  position: relative;
 }
 
 .image-text-container {
@@ -73,8 +80,12 @@ ul {
   font-family: "Rubik", sans-serif;
   letter-spacing: 2px;
   color: black;
-  font-size: 18px;
+  font-size: 20px;
   text-transform: uppercase;
+  align-self: flex-end;
+  right: 50px;
+  bottom: 100px;
+  position: relative;
 }
 
 .belox-text-container {
@@ -87,6 +98,8 @@ ul {
   font-family: "Rubik", sans-serif;
   letter-spacing: 0.5px;
   color: peru;
-  margin-top: -20%;
   font-size: 20px;
+  bottom: 105px;
+  position: relative;
+  text-align: justify;
 }

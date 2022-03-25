@@ -6,24 +6,30 @@ export default function CardHolder() {
   const cardsInfo = [
     {
       title: "MEXICO",
-      flag: "https://cdn-icons-png.flaticon.com/512/390/390142.png",
+      flag: "https://cdn-icons-png.flaticon.com/512/330/330433.png",
       name: "CAFÉ DE OLLA",
       image:
         "https://laroussecocina.mx/wp-content/uploads/2018/01/Cafe-de-olla-001-Larousse-Cocina.jpg",
-      ingredients: ["1 tsp espresso"],
+      ingredients: [
+        "Cinnamon stick",
+        "1.5 cups water",
+        "1 tbsp coffee",
+        "1.5 tbsp piloncillo",
+      ],
       description:
         "Mexico is one of the largest exporters of organic certified coffee",
       color: "antiquewhite",
+      boxshadow: "#876445",
     },
     {
       title: "CUBA",
-      flag: "https://cdn-icons.flaticon.com/png/512/5344/premium/5344491.png?token=exp=1647471516~hmac=76d50e2d3039f2e203970b226cc55d88",
+      flag: "https://cdn-icons-png.flaticon.com/512/330/330532.png",
       name: "CAFÉ CUBANO",
       image:
         "https://recetacubana.com/wp-content/uploads/2019/08/cafe-cubano-1024x1024.jpg",
-      ingredients: ["1 tsp espresso"],
+      ingredients: ["1 tbsp sugar", "espresso", "small but strong"],
       description:
-        " Drinking cortado is also common in other countries like Spain and Portugal.",
+        "Coffee cultivated in Sierra Maestra is done so without chemical fertilisers",
       color: "antiquewhite",
     },
     {
@@ -32,9 +38,8 @@ export default function CardHolder() {
       name: "CORTADO",
       image:
         "https://perfectdailygrind.com/es/wp-content/uploads/sites/2/2020/03/Cortadito-1.png",
-      ingredients: ["1 tsp espresso"],
-      description:
-        "  Eje Cafetero, also known as the Coffee Triangle, is Colombia's main coffee-growing region.",
+      ingredients: [" 1 part milk", "1 part espresso", "1 TBSP SUGAR "],
+      description: "Eje Cafetero is Colombia's main coffee-growing region.",
       color: "antiquewhite",
     },
     {
@@ -43,8 +48,9 @@ export default function CardHolder() {
       name: "CAFEZINHO",
       image:
         "https://twigscafe.com/wp-content/uploads/2021/07/cup-of-black-coffee.jpg",
-      ingredients: ["1 tsp espresso"],
-      description: "..",
+      ingredients: ["1 tbsp sugar", "espresso", "paper flannel filter"],
+      description:
+        "Similar to an espresso, cafezinhos are small, strong cups of java.",
       color: "antiquewhite",
     },
   ];
@@ -63,6 +69,7 @@ export default function CardHolder() {
           ingredients={cardsInfo[i].ingredients}
           description={cardsInfo[i].description}
           color={cardsInfo[i].color}
+          bordercolor={cardsInfo[i]}
         />
       );
     }

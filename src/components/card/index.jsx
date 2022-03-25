@@ -29,7 +29,7 @@ export default function Card({
         <div className="name">{name}</div>
       </div>
       <div className="image-text-container">
-        <img className="image" src={image} alt="beans" />
+        <img className="image" src={image} alt="..." />
       </div>
       <ul className="ingredients">{createIngredients(ingredients)}</ul>
       <div className="belox-text-container">
