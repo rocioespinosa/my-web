@@ -7,58 +7,74 @@ export default function CardHolder() {
     {
       title: "SENEGAL",
       flag: "https://cdn-icons-png.flaticon.com/512/321/321259.png",
-      name: "CAFE TOUBA",
-      image:
-        "https://i.insider.com/579b8e3fdd0895e4518b4da3?width=700&format=jpeg&auto=webp",
-      ingredients: ["african black pepper", "sugar", "ground coffee beans"],
-      description:
-        "This drink is flavored with Guinea pepper and occasionally cloves.",
+      info: [
+        {
+          name: "CAFE TOUBA",
+          image:
+            "https://i.insider.com/579b8e3fdd0895e4518b4da3?width=700&format=jpeg&auto=webp",
+          ingredients: ["african black pepper", "sugar", "ground coffee beans"],
+          description:
+            "This drink is flavored with Guinea pepper and occasionally cloves.",
+        },
+      ],
       color: "antiquewhite",
     },
     {
       title: "INDIA",
       flag: "https://cdn-icons-png.flaticon.com/512/330/330439.png",
-      name: "FILTER COFFEE",
-      image:
-        "https://www.vegrecipesofindia.com/wp-content/uploads/2016/09/filter-coffee-recipe-1-500x500.jpg",
-      ingredients: [
-        "1 tsp sugar",
-        "1 cup milk",
-        "3/4 cup water",
-        "2 tsp coffee powder",
+      info: [
+        {
+          name: "FILTER COFFEE",
+          image:
+            "https://www.vegrecipesofindia.com/wp-content/uploads/2016/09/filter-coffee-recipe-1-500x500.jpg",
+          ingredients: [
+            "1 tsp sugar",
+            "1 cup milk",
+            "3/4 cup water",
+            "2 tsp coffee powder",
+          ],
+          description:
+            "Baba Budan is credited with bringing coffee to India in the 17th century.",
+        },
       ],
-      description:
-        "Baba Budan is credited with bringing coffee to India in the 17th century.",
       color: "antiquewhite",
     },
     {
       title: "MOROCCO",
       flag: "https://cdn-icons-png.flaticon.com/512/630/630616.png",
-      name: "SPICED",
-      image:
-        "https://i.etsystatic.com/7670566/r/il/479c87/591897711/il_570xN.591897711_br5w.jpg",
-      ingredients: [
-        "1/2 cup coffee beans",
-        "cinnamon, ginger",
-        "cardamom, salt",
+      info: [
+        {
+          name: "SPICED",
+          image:
+            "https://i.etsystatic.com/7670566/r/il/479c87/591897711/il_570xN.591897711_br5w.jpg",
+          ingredients: [
+            "1/2 cup coffee beans",
+            "cinnamon, ginger",
+            "cardamom, salt",
+          ],
+          description:
+            "This fragrant blend of dark coffee melds together warm spices like cardamom, black pepper, cinnamon, clove, and nutmeg.",
+        },
       ],
-      description:
-        "This fragrant blend of dark coffee melds together warm spices like cardamom, black pepper, cinnamon, clove, and nutmeg.",
       color: "antiquewhite",
     },
     {
       title: "ALGERIA",
       flag: "https://cdn-icons-png.flaticon.com/512/330/330541.png",
-      name: "MAZAGRAN",
-      image:
-        "https://coffeeaffection.com/wp-content/uploads/2021/01/mazagran-lemon-coffee-recipe.jpg",
-      ingredients: [
-        "ice",
-        "black coffee",
-        "2 tbsp lemon juice",
-        "2 tbsp sugar",
+      info: [
+        {
+          name: "MAZAGRAN",
+          image:
+            "https://coffeeaffection.com/wp-content/uploads/2021/01/mazagran-lemon-coffee-recipe.jpg",
+          ingredients: [
+            "ice",
+            "black coffee",
+            "2 tbsp lemon juice",
+            "2 tbsp sugar",
+          ],
+          description: "Mazagran can be served hot or cold.",
+        },
       ],
-      description: "Mazagran can be served hot or cold.",
       color: "antiquewhite",
     },
   ];
@@ -67,18 +83,7 @@ export default function CardHolder() {
     const new_arr = [];
 
     for (let i = 0; i < arr.length; i++) {
-      new_arr.push(
-        <Card
-          className="cardHolder-card"
-          title={cardsInfo[i].title}
-          flag={cardsInfo[i].flag}
-          name={cardsInfo[i].name}
-          image={cardsInfo[i].image}
-          ingredients={cardsInfo[i].ingredients}
-          description={cardsInfo[i].description}
-          color={cardsInfo[i].color}
-        />
-      );
+      new_arr.push(<Card className="cardHolder-card" {...cardsInfo[i]} />);
     }
 
     return new_arr;
