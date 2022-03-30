@@ -16,12 +16,12 @@ function App() {
       </div>
       <div className="app-LPage">
         {" "}
-        <LandingPage />
-        <America />
-        <Europe />
-        <Europe2 />
-        <Africa />
-        <Asia />
+        <LandingPage id="landing" />
+        <America id="america" />
+        <Europe id="europe" />
+        <Europe2 id="europe2" />
+        <Africa id="africa" />
+        <Asia id="asia" />
       </div>
     </div>
   );

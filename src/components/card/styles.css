@@ -88,6 +88,27 @@ ul {
   position: relative;
 }
 
+.right-arrow,
+.left-arrow {
+  display: flex;
+  flex-direction: row;
+  background-color: transparent;
+}
+
+.right-arrow {
+  border-radius: 50px;
+  border-color: black;
+  box-shadow: transparent;
+  margin-left: 80%;
+}
+
+.left-arrow {
+  border-radius: 50px;
+  border-color: black;
+  box-shadow: transparent;
+  margin-right: 80%;
+}
+
 .belox-text-container {
   display: flex;
   flex-direction: row;

@@ -17,6 +17,10 @@ export default function Card({ title, flag, info, color }) {
     setSelectedInfo((selectedInfo + 1) % info.length);
   };
 
+  const onLeftArrowClicked = () => {
+    setSelectedInfo((selectedInfo - 1) % info.length);
+  };
+
   return (
     <div className="card" style={{ backgroundColor: color }}>
       <div className="title-name-flag-container">
@@ -27,20 +31,31 @@ export default function Card({ title, flag, info, color }) {
         <div className="name">{info[selectedInfo].name}</div>
       </div>
       <div className="image-text-container">
-        <img className="image" src={info[selectedInfo].image} alt="..." />
+        <img className="image" src={info[selectedInfo].image} alt="coffee" />
       </div>
       <ul className="ingredients">
         {createIngredients(info[selectedInfo].ingredients)}
       </ul>
       {info?.length > 1 && (
-        <button onClick={onRightArrowClicked}>
+        <button className="right-arrow" onClick={onRightArrowClicked}>
           <img
-            src="https://previews.123rf.com/images/eljanstock/eljanstock1811/eljanstock181109660/111791312-right-arrow-vector-icon-isolated-on-transparent-background-right-arrow-transparency-logo-concept.jpg"
+            src="https://cdn-icons-png.flaticon.com/512/7180/7180224.png"
             alt="right arrow"
-            width="40px"
+            width="30px"
           />
         </button>
       )}
+
+      {selectedInfo !== 0 && (
+        <button className="left-arrow" onClick={onLeftArrowClicked}>
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/7180/7180213.png"
+            alt="right arrow"
+            width="30px"
+          />
+        </button>
+      )}
+
       <div className="belox-text-container">
         <span className="description">{info[selectedInfo].description}</span>
       </div>

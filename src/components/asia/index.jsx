@@ -9,7 +9,7 @@ export default function CardHolder() {
       flag: "https://cdn-icons-png.flaticon.com/512/330/330467.png",
       info: [
         {
-          name: "TURKISH",
+          name: "TURKISH COFFEE",
           image:
             "https://i.insider.com/579b8e3fdd0895e4518b4da3?width=700&format=jpeg&auto=webp",
           ingredients: [

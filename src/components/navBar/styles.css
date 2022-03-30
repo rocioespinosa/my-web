@@ -11,6 +11,11 @@
   top: 0;
   left: 0;
   transition: clip-path 275ms ease;
+  margin: 0;
+  line-height: 1;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
 }
 .navstyle {
   color: black;

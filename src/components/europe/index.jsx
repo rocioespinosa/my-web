@@ -9,6 +9,15 @@ export default function CardHolder() {
       flag: "https://cdn-icons-png.flaticon.com/512/321/321240.png",
       info: [
         {
+          name: "CAPUCCINO",
+          image:
+            "https://exigibuencafe.com/wp-content/uploads/2017/12/exigi-5-1000x600.jpg",
+          ingredients: ["foamed milk", "steamed milk", "shot of espresso"],
+          description:
+            "Italy has the largest number of coffee bars per capita.",
+        },
+
+        {
           name: "MARROCHINO",
           image:
             "https://eltrebolcafe.com.ar/wp-content/uploads/2021/05/marocchino.adapt_.png",
@@ -17,13 +26,41 @@ export default function CardHolder() {
             "It is customary to drink milky coffee in the morning, never after a meal.",
         },
         {
-          name: "LUNGO",
+          name: "ESPRESSO ROMANO",
 
           image:
-            "https://eltrebolcafe.com.ar/wp-content/uploads/2021/05/marocchino.adapt_.png",
-          ingredients: ["cocoa powder", "1 part milk", "small shot espresso"],
+            "https://cdn.tasteatlas.com/images/ingredients/08090796ff534616b0e3d0024f0f8bc5.jpg",
+          ingredients: ["slice of lemon", "espresso coffee"],
+          description:
+            "Lukewarm rather than hot - it is the customary temperature when serving coffee in Italy.",
+        },
+        {
+          name: "ANTOCCINO",
+
+          image:
+            "https://media-cdn.tripadvisor.com/media/photo-p/10/4a/dd/03/a-beautiful-antoccino.jpg",
+          ingredients: ["1 part milk", "1 part espresso"],
+          description:
+            "In italian bars, it is customary to drink coffee standing up.",
+        },
+        {
+          name: "MACCHIATO",
+
+          image:
+            "https://www.nespresso.com/ncp/res/uploads/recipes/nespresso-recipes-Latte-Macchiato.jpg",
+          ingredients: ["splash of frothed milk", "1 part espresso"],
           description:
             "It is customary to drink milky coffee in the morning, never after a meal.",
+        },
+
+        {
+          name: "RISTRETTO",
+
+          image:
+            "https://www.cucinare.tv/wp-content/uploads/2020/01/Ristretto1.jpg",
+          ingredients: ["very short shot", "of espresso coffee"],
+          description:
+            "Southern Italy favours short and strong espressos, whereas in the north, more milk is present.",
         },
       ],
       color: "antiquewhite",
@@ -76,7 +113,7 @@ export default function CardHolder() {
             "https://caferecetas.com/wp-content/uploads/2021/03/Cafe-au-Lait.jpg",
           ingredients: ["1 part milk", "1 part espresso", "1 tbsp sugar"],
           description:
-            "The trick here is to serve it in a big cup — to make for easy croissant dipping.",
+            "The trick here is to serve it in a big cup — to make it easy for croissant dipping.",
         },
       ],
 

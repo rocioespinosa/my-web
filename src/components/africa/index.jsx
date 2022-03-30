@@ -44,7 +44,7 @@ export default function CardHolder() {
       flag: "https://cdn-icons-png.flaticon.com/512/630/630616.png",
       info: [
         {
-          name: "SPICED",
+          name: "SPICED COFFEE",
           image:
             "https://i.etsystatic.com/7670566/r/il/479c87/591897711/il_570xN.591897711_br5w.jpg",
           ingredients: [

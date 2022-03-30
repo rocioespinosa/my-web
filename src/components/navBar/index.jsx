@@ -5,31 +5,47 @@ export default function index() {
   const handleClick = (scrollToId) => {
     document.getElementById(scrollToId).scrollIntoView({
       behavior: "smooth",
+      inline: "center",
     });
   };
 
   return (
     <div className="topNav">
-      <span className="navstyle" onClick={() => handleClick("landing")}>
+      <div
+        id="landingPage"
+        className="navstyle"
+        onClick={() => handleClick("landingPage")}
+      >
         Home
-      </span>{" "}
+      </div>
       &nbsp;
-      <span className="navstyle" onClick={() => handleClick("America")}>
-        {" "}
-        America{" "}
-      </span>{" "}
+      <div
+        id="america"
+        className="navstyle"
+        onClick={() => handleClick("america")}
+      >
+        America
+      </div>
       &nbsp;
-      <span className="navstyle" onClick={() => handleClick("Europe")}>
+      <div
+        id="europe"
+        className="navstyle"
+        onClick={() => handleClick("europe")}
+      >
         Europe
-      </span>
+      </div>
       &nbsp;
-      <span className="navstyle" onClick={() => handleClick("Africa")}>
+      <div
+        id="africa"
+        className="navstyle"
+        onClick={() => handleClick("africa")}
+      >
         Africa
-      </span>
+      </div>
       &nbsp;
-      <span className="navstyle" onClick={() => handleClick("Asia")}>
+      <div id="asia" className="navstyle" onClick={() => handleClick("asia")}>
         Asia
-      </span>
+      </div>
     </div>
   );
 }

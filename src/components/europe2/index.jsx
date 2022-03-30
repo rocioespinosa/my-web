@@ -51,7 +51,7 @@ export default function CardHolder() {
             "1 egg yolk",
             "1 cup espresso",
           ],
-          description: "1683- the year coffee was introduced in Europe",
+          description: "1683- the year coffee was introduced in Europe.",
         },
       ],
       color: "antiquewhite",
