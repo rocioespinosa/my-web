@@ -32,32 +32,30 @@ export default function Card({ title, flag, info, color }) {
       </div>
       <div className="image-text-container">
         <img className="image" src={info[selectedInfo].image} alt="coffee" />
+        <ul className="ingredients">
+          {createIngredients(info[selectedInfo].ingredients)}
+        </ul>
       </div>
-      <ul className="ingredients">
-        {createIngredients(info[selectedInfo].ingredients)}
-      </ul>
-      {info?.length > 1 && (
-        <button className="right-arrow" onClick={onRightArrowClicked}>
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/7180/7180224.png"
-            alt="right arrow"
-            width="30px"
-          />
-        </button>
-      )}
-
-      {selectedInfo !== 0 && (
-        <button className="left-arrow" onClick={onLeftArrowClicked}>
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/7180/7180213.png"
-            alt="right arrow"
-            width="30px"
-          />
-        </button>
-      )}
-
-      <div className="belox-text-container">
-        <span className="description">{info[selectedInfo].description}</span>
+      <span className="description">{info[selectedInfo].description}</span>
+      <div className="arrows-container">
+        {selectedInfo !== 0 && (
+          <button className="left-arrow" onClick={onLeftArrowClicked}>
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/7180/7180213.png"
+              alt="right arrow"
+              width="30px"
+            />
+          </button>
+        )}
+        {info?.length > 1 && (
+          <button className="right-arrow" onClick={onRightArrowClicked}>
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/7180/7180224.png"
+              alt="right arrow"
+              width="30px"
+            />
+          </button>
+        )}
       </div>
     </div>
   );

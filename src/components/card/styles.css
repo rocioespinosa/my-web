@@ -27,7 +27,7 @@
 .title-name-flag-container {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .title {
@@ -62,14 +62,14 @@
   width: 200px;
   height: 200px;
   border-radius: 25%;
-  margin-right: 350px;
   margin-top: 4%;
-  position: relative;
 }
 
 .image-text-container {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 ul {
@@ -82,16 +82,11 @@ ul {
   color: black;
   font-size: 20px;
   text-transform: uppercase;
-  align-self: flex-end;
-  right: 50px;
-  bottom: 100px;
   position: relative;
 }
 
 .right-arrow,
 .left-arrow {
-  display: flex;
-  flex-direction: row;
   background-color: transparent;
 }
 
@@ -99,20 +94,13 @@ ul {
   border-radius: 50px;
   border-color: black;
   box-shadow: transparent;
-  margin-left: 80%;
+  margin-left: auto;
 }
 
 .left-arrow {
   border-radius: 50px;
   border-color: black;
   box-shadow: transparent;
-  margin-right: 80%;
-}
-
-.belox-text-container {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
 }
 
 .description {
@@ -120,7 +108,15 @@ ul {
   letter-spacing: 0.5px;
   color: peru;
   font-size: 20px;
-  bottom: 105px;
-  position: relative;
   text-align: justify;
+  margin-top: 2%;
+}
+
+.arrows-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 2%;
+  padding: 0 10%;
 }
